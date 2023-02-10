@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="./test.js"></script>
+</head>
+<body>
+    <div id="products"></div>
+    <div class="cartArea" id="cart">
+        <span class="totalPrice"></span>
+    </div>
+
+    <script>
+        const productArea=document.getElementById("products")
+        data.map(x=>{
+            productArea.innerHTML+=`<button class="add_btn" onclick="addProduct(${x.priceSale},'${x.name}')" >${x.name}</button>`
+        })
+// querySelector, addEventListener, Push
+       
+
+        var basketCase = {products:[],totalProductPrice:[]};
+
+        function addProduct(PRICESALE,NAME){
+
+            console.log("Product Name: " + NAME)
+            basketCase.products.push(NAME);
+            basketCase.totalProductPrice.push(PRICESALE);
+            
+            var result = 0;
+                 for (var i = 0; i < basketCase.totalProductPrice.length; i++) {
+                     if (isNaN(basketCase.totalProductPrice[i])) {
+                        continue;
+        }
+ 
+                    result += Number(basketCase.totalProductPrice[i]);
+    }
+
+            console.log("Total Price: " + result);
+            
+            
+    
+            
+
+
+
+
+
+
+            //return (function productArea() {
+            //const calculatedProductPrice=satisFiyat; 
+            //basketCase.totalProductPrice=calculatedProductPrice;
+            //})
+            //const getCartElement=document.getElementById("cart")
+            //const getCartPriceArea=getCartElement.getElementsByClassName("totalPrice")[0]
+            //getCartElement.innerHTML=""
+            
+        }
+        
+        /*let addBtn2 =document.querySelector('.add_btn2');
+        addBtn2.addEventListener('click',function(){
+            let urunName1 = (data[1].name);
+            let urunPrice1 = (data[1].priceSale);
+            console.log({urunName1,urunPrice1});   
+        })
+        */
+        
+        
+        
+            
+
+      
+      
+       
+
+    
+
+
+
+
+    
+
+    </script>
+</body>
+</html>
